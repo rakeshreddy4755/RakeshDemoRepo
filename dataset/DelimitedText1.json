@@ -1,0 +1,37 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "empsourceData.csv",
+				"folderPath": "input",
+				"container": "adfdemo"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Rakesh",
+				"type": "String"
+			},
+			{
+				"name": "male",
+				"type": "String"
+			},
+			{
+				"name": "1234",
+				"type": "String"
+			}
+		]
+	}
+}
